@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doodle Pad</title>
+    <link rel="icon" href="icons-illustrator.png">
+
+    <link rel="stylesheet" href="main.css" type="text/css">
+
+
+</head>
+
+<body>
+
+    <h1>Doodle Pad</h1>
+
+    <canvas id="myCan" width="800" height="600"></canvas>
+    <div>
+    <div id="pick">
+        <label for="pen-color">Color :</label>
+        <input id="pen-color" type="color"/>
+
+
+        <label for="pen-width" style="margin-left: 10%;">Stroke Width :</label>
+        <input id="pen-width" type="range" min="1" max="20" />
+
+    </div>
+            <br>
+        <div id="save">
+        <button type="button" id="xsave"><span>Save</span></button>
+        <button type="button" id="xclear"><span>Clear</span></button>
+        </div>
+
+
+    </div>
+
+    <img id="canvasout" style="display:none;">
+
+    <script src='script.js'></script>
+</body>
+
+</html>
